@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PrefFragmentActivity"></activity>
+        <service
+            android:name=".LockScreenService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".ScreenOffExActivity" />
+        <activity android:name=".PrefFragmentActivity" />
         <activity android:name=".PrefExActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FileExActivity"></activity>
+        <activity android:name=".FileExActivity" />
         <activity android:name=".MainActivity" />
     </application>
 

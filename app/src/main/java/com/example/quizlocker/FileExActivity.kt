@@ -84,6 +84,7 @@ class FileExActivity : AppCompatActivity() {
 //        fileOutputStream.write(text.toByteArray())
 //        fileOutputStream.close()
 //    }
+
 //
 //    fun loadFromExternalStorage(filename: String): String {
 //        return FileInputStream(getAppDataFileFromExternalStorage(filename)).reader().readText()
